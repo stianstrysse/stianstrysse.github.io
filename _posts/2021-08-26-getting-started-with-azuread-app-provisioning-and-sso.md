@@ -105,3 +105,7 @@ Enabling single-sign-on in Azure AD for "Workplace by Facebook" is [documented b
     ![FB SSO configured](/assets/img/posts/2021-08-25/fb-sso-completed.png)
 
 This concludes the setup of single-sign-on. Any Azure AD users assigned to the **Workplace from Facebook** app, which also exists as a user in Workplace, will now be able to use single-sign-on.
+
+## Enabling automated user provisioning
+
+Placeholder!
