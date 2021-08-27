@@ -16,9 +16,9 @@ Having users (and groups) automatically created, maintained and disabled/removed
 
 In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning, and 1675 SaaS apps supporting SSO (SAML or OpenID Connect). Let's take one of those SaaS apps, "Workplace by Facebook" which many organizations use today, and see how we can enable both of these features.
 
-+ [Prerequisites](#Prerequisites)
-+ [Enabling single-sign-on](#Enabling-single-sign-on)
-+ [Enabling automated user provisioning](#Enabling-automated-user-provisioning)
++ [Prerequisites](#prerequisites)
++ [Enabling single-sign-on](#enabling-single-sign-on)
++ [Enabling automated user provisioning](#enabling-automated-user-provisioning)
 
 ![AAD Gallery](/assets/img/posts/2021-08-27/aad-gallery.png)
 
