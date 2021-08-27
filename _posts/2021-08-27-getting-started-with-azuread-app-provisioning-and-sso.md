@@ -10,11 +10,15 @@ Azure AD has many key strengths and features, automated user provisioning and si
 
 ![AAD SSO and Provisioning](/assets/img/posts/2021-08-27/aad-sso-provisioning.png)
 
-I've specifically worked in consultancy focusing on identity, access and security the last five years - and I must honestly say that there's nothing as cool as automating and controlling identity lifecycle and governance with modern and built-in capabilities like the ones Azure AD is offering. 
+I've worked in consultancy focusing on identity, access and security the last five years - and I must honestly say that there's nothing as cool as automating and controlling identity lifecycle and governance with modern and built-in capabilities like the ones Azure AD is offering. 
 
 Having users (and groups) automatically created, maintained and disabled/removed in connected SaaS apps gives organizations full control of the identities, while enabling single-sign-on for the same apps makes it painless for end-users to sign in, and lowers the volume of Service Desk tickets categorized as sign-in issues. Win-win!
 
-In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning, and 1675 SaaS apps supporting SSO (SAML or OpenID Connect). Let's take one of those SaaS apps, "Workplace by Facebook" which many organizations use today, and see how we can enable both of these features. 
+In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning, and 1675 SaaS apps supporting SSO (SAML or OpenID Connect). Let's take one of those SaaS apps, "Workplace by Facebook" which many organizations use today, and see how we can enable both of these features.
+
++ [Prerequisites](#Prerequisites)
++ [Enabling single-sign-on](#Enabling-single-sign-on)
++ [Enabling automated user provisioning](#Enabling-automated-user-provisioning)
 
 ![AAD Gallery](/assets/img/posts/2021-08-27/aad-gallery.png)
 
