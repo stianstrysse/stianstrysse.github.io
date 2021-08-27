@@ -3,20 +3,20 @@ layout: post
 title: "Getting started with Azure AD App Provisioning and SSO"
 subtitle: "My first-ever blog post walks through how to enable automated user provisioning and single-sign-on from Azure AD to SaaS apps, specifically for Workplace from Facebook"
 categories: AZUREAD IDENTITY PROVISIONING SSO
-thumbnail-img: "/assets/img/posts/2021-08-25/aad-sso-provisioning-thumb.png"
+thumbnail-img: "/assets/img/posts/2021-08-27/aad-sso-provisioning-thumb.png"
 ---
 
 Azure AD has many key strengths and features, automated user provisioning and single-sign-on (SSO) capabilities for a number of SaaS apps being two of them. 
 
-![AAD SSO and Provisioning](/assets/img/posts/2021-08-25/aad-sso-provisioning.png)
+![AAD SSO and Provisioning](/assets/img/posts/2021-08-27/aad-sso-provisioning.png)
 
 I've specifically worked in consultancy focusing on identity, access and security the last five years - and I must honestly say that there's nothing as cool as automating and controlling identity lifecycle and governance with modern and built-in capabilities like the ones Azure AD is offering. 
 
-Having users (and groups) automatically created, maintained and disabled/removed in connected SaaS apps gives organizations full control on the identities, while enabling single-sign-on for the same apps makes it painless for end-users to sign in, and lowers the volume of Service Desk tickets categorized as sign-in issues. Win-win!
+Having users (and groups) automatically created, maintained and disabled/removed in connected SaaS apps gives organizations full control of the identities, while enabling single-sign-on for the same apps makes it painless for end-users to sign in, and lowers the volume of Service Desk tickets categorized as sign-in issues. Win-win!
 
 In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning, and 1675 SaaS apps supporting SSO (SAML or OpenID Connect). Let's take one of those SaaS apps, "Workplace by Facebook" which many organizations use today, and see how we can enable both of these features. 
 
-![AAD Gallery](/assets/img/posts/2021-08-25/aad-gallery.png)
+![AAD Gallery](/assets/img/posts/2021-08-27/aad-gallery.png)
 
 ## Prerequisites
 
@@ -28,21 +28,21 @@ You need to be either a Global Administrator, Application Administrator or Cloud
 
 Go to the [Azure AD Gallery](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AppGalleryBladeV2), search for "Workplace from Facebook" and create the app in Azure AD.
 
-![Add Azure AD Gallery App: Workplace from Facebook](/assets/img/posts/2021-08-25/fb-app-add.png)
+![Add Azure AD Gallery App: Workplace from Facebook](/assets/img/posts/2021-08-27/fb-app-add.png)
 
-[Signing up for a "Workplace by Facebook" trail](https://work.workplace.com/company_creation/) grants 30 days of core capabilities, which is required both for automated user provisioning and for single-sign-on to Workplace. Be sure to sign up with a user where the email/UPN is for the same domain as in your Azure AD tenant, as this domain will have to be verified in Workplace before enabling SSO. 
+[Signing up for a "Workplace by Facebook" trial](https://work.workplace.com/company_creation/) grants 30 days of core capabilities, which is required both for automated user provisioning and for single-sign-on to Workplace. Be sure to sign up with a user where the email/UPN is for the same domain as in your Azure AD tenant, as this domain will have to be verified in Workplace before enabling SSO. 
 
-Once signed up with a trail, we can continue with enabling the features.
+Once signed up with a trial, we can continue with enabling the features.
 
 ## Enabling single-sign-on
 
 Enabling single-sign-on in Azure AD for "Workplace by Facebook" is [documented by Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/workplacebyfacebook-tutorial), but I'll go through the steps here. 
 
-1. Navitage to the [Azure Portal](https://portal.azure.com) -> *Enterprise Applications* -> *Workplace by Facebook* (which you added earlier) -> *Properties*, set **User assignment required** to **Yes** and save. 
+1. Navigate to the [Azure Portal](https://portal.azure.com) -> *Enterprise Applications* -> *Workplace by Facebook* (which you added earlier) -> *Properties*, set **User assignment required** to **Yes** and save. 
 
     Go to *Users and groups* and assign your admin account (the one you registered the Workplace environment with), as this account is needed for testing SSO before being allowed to save the SSO settings in Workplace.
 
-2. In a separate browser tab, navigate to the [Workplace by Facebook website](https://workplace.com) and log in to your new trail environment, then go to *Admin Panel* -> *Security* -> *Authentication*.
+2. In a separate browser tab, navigate to the [Workplace by Facebook website](https://workplace.com) and log in to your new trial environment, then go to *Admin Panel* -> *Security* -> *Authentication*.
 
     Activate the **Single-sign on (SSO)** option listed under **Log in** and set **Default for new users** to **SSO**.
     
@@ -66,7 +66,7 @@ Enabling single-sign-on in Azure AD for "Workplace by Facebook" is [documented b
 
     > **Note:** Set the new value in 'Identifier (Entity ID)' as default, and remove the 'https://www.facebook.com/company/*' value from the list before clicking **Save**!
 
-    ![AAD SAML configuration](/assets/img/posts/2021-08-25/aad-saml-config.png)
+    ![AAD SAML configuration](/assets/img/posts/2021-08-27/aad-saml-config.png)
 
     Then click **Save** and close the **Basic SAML Configuration** - choose **No, I'll test later** if you're asked to test single-sign-on
 
@@ -88,11 +88,11 @@ Enabling single-sign-on in Azure AD for "Workplace by Facebook" is [documented b
     | SAML Issuer URL | Set value from: Azure AD Identifier |
     | SAML Certificate | Set base64 value from: downloaded certificate |  
 
-    ![FB SSO configuration](/assets/img/posts/2021-08-25/fb-sso-config.png)
+    ![FB SSO configuration](/assets/img/posts/2021-08-27/fb-sso-config.png)
 
     Once the values have been added, click the **Test SSO** button. If everything has been done correctly, you should see a new tab stating *Your SSO is working properly*
 
-    ![FB SSO working](/assets/img/posts/2021-08-25/fb-sso-working.png)
+    ![FB SSO working](/assets/img/posts/2021-08-27/fb-sso-working.png)
 
     Now click **Save Changes** on the **Single Sign-On (SSO) Setup** dialog box in the Workplace website. 
     
@@ -102,7 +102,7 @@ Enabling single-sign-on in Azure AD for "Workplace by Facebook" is [documented b
     
     > **Note:** Remember to click **Save Changes** on the **Authentication** page once everything is configured.
 
-    ![FB SSO configured](/assets/img/posts/2021-08-25/fb-sso-completed.png)
+    ![FB SSO configured](/assets/img/posts/2021-08-27/fb-sso-completed.png)
 
 This concludes the setup of single-sign-on. Any Azure AD users assigned to the **Workplace from Facebook** app, which also exists as a user in Workplace, will now be able to use single-sign-on.
 
