@@ -149,6 +149,6 @@ Once you have provisioned a few users on demand and are satisfied with the resul
 >   
 >   ![FB autoinvite](/assets/img/posts/2021-08-28/fb-scim-autoinvite.png)
 
-This concludes the blog post, thanks for reading! 
+This concludes the blog post, thanks for reading!  
 
 Be sure to [tweet any feedback](https://twitter.com/stianstrysse/status/1431713008624054277).
