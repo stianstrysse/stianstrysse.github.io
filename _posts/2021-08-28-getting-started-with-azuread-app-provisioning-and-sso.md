@@ -144,7 +144,7 @@ The configuration of automated user provisioning is completed. But prior to acti
 
 ## Testing and enabling automated user provisioning
 
-Use the **Provision on demand** feature in Azure AD App Provisioning to test user provisioning, this feature enables you to synchronize *one* user at a time to verify that the SCIM operation, object matching and and attribute flow works as expected. This is a good exercise to get confident with the provisioning process.
+Use the **Provision on demand** feature in Azure AD to test user provisioning, this feature enables you to synchronize *one* user at a time to verify that the SCIM operation, object matching and attribute flow works as expected. This is a good exercise to get confident with the provisioning process.
 
 To provision on demand, navigate to the [Azure Portal](https://portal.azure.com) -> *Enterprise Applications* -> *Workplace from Facebook* -> *Provisioning* -> *Provision on demand*. Type in the UserPrincipalName of a user already assigned to the app, and click **Provision**.
 
