@@ -23,6 +23,9 @@ In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps s
 
 ![AAD Gallery](/assets/img/posts/2021-08-28/aad-gallery.png)
 
+<p></p>
+<p></p>
+
 ## Prerequisites
 
 > **Note:** As always, test well and get to know the features in a demo environment before planning for production!
@@ -39,6 +42,7 @@ Go to the [Azure AD Gallery](https://aad.portal.azure.com/#blade/Microsoft_AAD_I
 
 Once signed up with a trial, we can continue with enabling the features.
 
+<p></p>
 <p></p>
 
 ## Configuring single-sign-on
@@ -114,7 +118,7 @@ Enabling single-sign-on in Azure AD for "Workplace from Facebook" is [documented
 This concludes the setup of single-sign-on. Any Azure AD users assigned to the **Workplace from Facebook** app, which also exists as a user in Workplace, will now be able to use single-sign-on.
 
 <p></p>
-
+<p></p>
 ## Configuring automated user provisioning
 
 Configuring automated user provisioning in Azure AD for "Workplace from Facebook" is [documented by Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/workplacebyfacebook-provisioning-tutorial), but I'll also go through the steps here:
@@ -136,6 +140,7 @@ Configuring automated user provisioning in Azure AD for "Workplace from Facebook
 The configuration of automated user provisioning is completed. But prior to activating the synchronization job it is important to test and verify that user provisioning is working correctly. 
 
 <p></p>
+<p></p>
 
 ## Testing and enabling automated user provisioning
 
@@ -145,10 +150,15 @@ To provision on demand, navigate to the [Azure Portal](https://portal.azure.com)
 
 > **Note:** If the user already exists in Workplace you will see an *Update* operation, if the user does not exist you will se a *Create* operation. Note that users disabled in Azure AD will not be provisioned to any target systems through Azure AD App Provisioning, as being enabled is a requirement. Also, since the app was configured to require user assignment, only users assigned to the app will be provisioned to Workplace. Lastly, Azure AD will never delete users in Workplace, as Workplace does not allow it by default. Azure AD will only disable the account (soft-delete) in Workplace when the account is disabled in Azure AD.
 
-[AAD provision on demand](/assets/img/posts/2021-08-28/aad-provision-on-demand.png)
+![AAD provision on demand](/assets/img/posts/2021-08-28/aad-provision-on-demand.png)
 
 Once you have provisioned a few users on demand and are satisfied with the results, make sure to enable the automated synchronization job by clicking **Start provisioning**. Azure AD will from now on automatically create, update and disable assigned users in Workplace. An initial full synchronization cycle will run first, where a delta synchronization will run every 40 minutes after that. 
 
 > **Tip**: If you require Workplace to automatically invite a new user created by Azure AD, instead of requiering an admin to click the *Invite* button on their user profile which is the default setting, go to *Workplace* -> *Admin Panel* -> *Integrations*, edit **Azure AD SCIM Provisioning** and enable **Automatically invite people to Workplace as soon as they're added using this integration**
 >   
 >   ![FB autoinvite](/assets/img/posts/2021-08-28/fb-scim-autoinvite.png)
+
+<p></p>
+<p></p>
+
+This concludes the blog post, thanks for reading! Be sure to tweet any feedback!
