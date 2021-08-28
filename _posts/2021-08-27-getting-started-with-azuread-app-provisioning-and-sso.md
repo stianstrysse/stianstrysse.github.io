@@ -152,7 +152,9 @@ To provision on demand, navigate to the [Azure Portal](https://portal.azure.com)
 
 ![AAD provision on demand](/assets/img/posts/2021-08-28/aad-provision-on-demand.png)
 
-Once you have provisioned a few users on demand and are satisfied with the results, make sure to enable the automated synchronization job by clicking **Start provisioning**. Azure AD will from now on automatically create, update and disable assigned users in Workplace. An initial full synchronization cycle will run first, where a delta synchronization will run every 40 minutes after that. 
+Once you have provisioned a few users on demand and are satisfied with the results, make sure to enable the automated synchronization job by clicking **Start provisioning**. Azure AD will from now on automatically create, update and disable assigned users in Workplace. An initial full synchronization cycle will run first, whereafter a delta synchronization will run every 40 minutes indefinitely.
+
+![AAD provision enabled](/assets/img/posts/2021-08-28/aad-provisioning-enabled.png)
 
 > **Tip**: If you require Workplace to automatically invite a new user created by Azure AD, instead of requiering an admin to click the *Invite* button on their user profile which is the default setting, go to *Workplace* -> *Admin Panel* -> *Integrations*, edit **Azure AD SCIM Provisioning** and enable **Automatically invite people to Workplace as soon as they're added using this integration**
 >   
