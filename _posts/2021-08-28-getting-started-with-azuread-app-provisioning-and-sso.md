@@ -23,9 +23,6 @@ In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps s
 
 ![AAD Gallery](/assets/img/posts/2021-08-28/aad-gallery.png)
 
-<p></p>
-<p></p>
-
 ## Prerequisites
 
 > **Note:** As always, test well and get to know the features in a demo environment before planning for production!
@@ -41,9 +38,6 @@ Go to the [Azure AD Gallery](https://aad.portal.azure.com/#blade/Microsoft_AAD_I
 [Signing up for a "Workplace from Facebook" trial](https://work.workplace.com/company_creation/) grants 30 days of core capabilities, which is required both for automated user provisioning and for single-sign-on to Workplace. Be sure to sign up with a user where the email/UPN is for the same domain as in your Azure AD tenant, as this domain will have to be verified in Workplace before enabling SSO. 
 
 Once signed up with a trial, we can continue with enabling the features.
-
-<p></p>
-<p></p>
 
 ## Configuring single-sign-on
 
@@ -117,8 +111,6 @@ Enabling single-sign-on in Azure AD for "Workplace from Facebook" is [documented
 
 This concludes the setup of single-sign-on. Any Azure AD users assigned to the **Workplace from Facebook** app, which also exists as a user in Workplace, will now be able to use single-sign-on.
 
-<p></p>
-<p></p>
 ## Configuring automated user provisioning
 
 Configuring automated user provisioning in Azure AD for "Workplace from Facebook" is [documented by Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/workplacebyfacebook-provisioning-tutorial), but I'll also go through the steps here:
@@ -139,9 +131,6 @@ Configuring automated user provisioning in Azure AD for "Workplace from Facebook
 
 The configuration of automated user provisioning is completed. But prior to activating the synchronization job it is important to test and verify that user provisioning is working correctly. 
 
-<p></p>
-<p></p>
-
 ## Testing and enabling automated user provisioning
 
 Use the **Provision on demand** feature in Azure AD to test user provisioning, this feature enables you to synchronize *one* user at a time to verify that the SCIM operation, object matching and attribute flow works as expected. This is a good exercise to get confident with the provisioning process.
@@ -160,7 +149,6 @@ Once you have provisioned a few users on demand and are satisfied with the resul
 >   
 >   ![FB autoinvite](/assets/img/posts/2021-08-28/fb-scim-autoinvite.png)
 
-<p></p>
-<p></p>
+This concludes the blog post, thanks for reading! 
 
-This concludes the blog post, thanks for reading! Be sure to tweet any feedback!
+Be sure to [tweet any feedback](https://twitter.com/stianstrysse/status/1431713008624054277).
