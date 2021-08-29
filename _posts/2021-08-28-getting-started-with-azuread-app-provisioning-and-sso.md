@@ -155,4 +155,4 @@ Keep an eye on the **Provisioning logs** for the app to gain visibility into the
 
 And that concludes this blog post, thanks for reading!
 
-Be sure provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1431713008624054277) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-app-provisioning-activity-6837480708999548928--IJb).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1431713008624054277) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-app-provisioning-activity-6837480708999548928--IJb).
