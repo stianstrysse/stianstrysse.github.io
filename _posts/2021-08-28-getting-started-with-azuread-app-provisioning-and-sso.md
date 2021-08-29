@@ -14,7 +14,7 @@ I've worked in consultancy focusing on identity, access and security the last fi
 
 Having users (and groups) automatically created, maintained and disabled/removed in connected SaaS apps gives organizations full control of the identities, while enabling single-sign-on for the same apps makes it painless for end-users to sign in, and lowers the volume of Service Desk tickets categorized as sign-in issues. Win-win!
 
-In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning ([SCIM standard](https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/user-provisioning#what-is-scim), and 1675 SaaS apps supporting SSO ([SAML](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-saml) or [OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-oidc)). Let's take one of those SaaS apps, "Workplace from Facebook" which many organizations use today, and see how we can enable both of these features.
+In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning ([SCIM standard](https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/user-provisioning#what-is-scim)), and 1675 SaaS apps supporting SSO ([SAML](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-saml) or [OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-oidc)). Let's take one of those SaaS apps, "Workplace from Facebook" which many organizations use today, and see how we can enable both of these features.
 
 + [Prerequisites](#prerequisites)
 + [Configuring single-sign-on](#configuring-single-sign-on)
