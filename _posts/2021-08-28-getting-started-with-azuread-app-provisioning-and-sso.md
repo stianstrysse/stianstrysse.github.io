@@ -17,8 +17,8 @@ Having users (and groups) automatically created, maintained and disabled/removed
 In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps supporting automated user provisioning ([SCIM standard](https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/user-provisioning#what-is-scim), and 1675 SaaS apps supporting SSO ([SAML](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-saml) or [OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-oidc)). Let's take one of those SaaS apps, "Workplace from Facebook" which many organizations use today, and see how we can enable both of these features.
 
 + [Prerequisites](#prerequisites)
-+ [Configuring single-sign-on](#enabling-single-sign-on)
-+ [Configuring automated user provisioning](#enabling-automated-user-provisioning)
++ [Configuring single-sign-on](#configuring-single-sign-on)
++ [Configuring automated user provisioning](#configuring-automated-user-provisioning)
 + [Testing and enabling automated user provisioning](#testing-and-enabling-automated-user-provisioning)
 
 ![AAD Gallery](/assets/img/posts/2021-08-28/aad-gallery.png)
@@ -27,7 +27,7 @@ In the Enterprise Gallery you will, at the time of writing, find 230 SaaS apps s
 
 > **Note:** As always, test well and get to know the features in a demo environment before planning for production!
 
-You'll need an Azure AD environment! I have a demo environment with Azure AD and M365 E5 licenses ready to go, but the Free Tier of Azure AD is sufficient for automated user provisioning to SaaS apps. Note that automated group provisioning requires [Azure AD P1 licenses](https://www.microsoft.com/en-us/security/business/identity-access-management/azure-ad-pricing). 
+You'll need an Azure AD environment. I have a demo environment with Azure AD and M365 E5 licenses ready to go, but the Free Tier of Azure AD is sufficient for automated user provisioning to SaaS apps. Note that automated group provisioning requires [Azure AD P1 licenses](https://www.microsoft.com/en-us/security/business/identity-access-management/azure-ad-pricing). 
 
 You need to be either a Global Administrator, Application Administrator or Cloud Application Administrator in the Azure AD tenant for adding the Workplace app and enabling the provisioning and SSO features.
 
@@ -41,7 +41,7 @@ Once signed up with a trial, we can continue with enabling the features.
 
 ## Configuring single-sign-on
 
-Enabling single-sign-on in Azure AD for "Workplace from Facebook" is [documented by Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/workplacebyfacebook-tutorial), but I'll go through the steps here: 
+Configuring single-sign-on in Azure AD for "Workplace from Facebook" is [documented by Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/workplacebyfacebook-tutorial), but I'll go through the steps here: 
 
 1. Navigate to the [Azure Portal](https://portal.azure.com) -> *Enterprise Applications* -> *Workplace from Facebook* (which you added earlier) -> *Properties*, set **User assignment required** to **Yes** and save. 
 
@@ -145,10 +145,14 @@ Once you have provisioned a few users on demand and are satisfied with the resul
 
 ![AAD provision enabled](/assets/img/posts/2021-08-28/aad-provisioning-enabled.png)
 
-> **Tip**: If you require Workplace to automatically invite a new user created by Azure AD, instead of requiering an admin to click the *Invite* button on their user profile which is the default setting, go to *Workplace* -> *Admin Panel* -> *Integrations*, edit **Azure AD SCIM Provisioning** and enable **Automatically invite people to Workplace as soon as they're added using this integration**
+Keep an eye on the **Provisioning logs** for the app to gain visibility into the operations carried out by Azure AD App Provisioning service, including any errors, created/updated objects and modified properties. The **Audit log** for the app will also contain valuable information both for troubleshooting and for visibility into the service.
+
+![AAD provisioning logs](/assets/img/posts/2021-08-28/aad-provisioning-logs.png)
+
+> **Tip**: If you need Workplace to automatically invite a new user created by Azure AD, instead of requiring an admin to click the *Invite* button on their user profile which is the default setting, go to *Workplace* -> *Admin Panel* -> *Integrations*, edit **Azure AD SCIM Provisioning** and enable **Automatically invite people to Workplace as soon as they're added using this integration**
 >   
 >   ![FB autoinvite](/assets/img/posts/2021-08-28/fb-scim-autoinvite.png)
 
-This concludes the blog post, thanks for reading!  
+And that concludes this blog post, thanks for reading!
 
-Be sure to [tweet any feedback](https://twitter.com/stianstrysse/status/1431713008624054277).
+Be sure provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1431713008624054277) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-app-provisioning-activity-6837480708999548928--IJb).
