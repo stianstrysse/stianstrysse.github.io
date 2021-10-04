@@ -251,4 +251,4 @@ These examples should hopefully get you familiar with the Graph Powershell SDK. 
 
 And that concludes this blogpost series on getting started with Microsoft Graph. I hope you enjoyed it, thanks for reading! 
 
-Be sure to provide any feedback on Twitter or LinkedIn.
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1444987076085178368) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-microsoft-graph-activity-6850752225954799617-c6NM).
