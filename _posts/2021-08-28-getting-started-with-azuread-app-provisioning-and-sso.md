@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Getting started with Azure AD App Provisioning and single-sign-on"
-subtitle: "My first-ever blog post walks through how to configure automated user provisioning and single-sign-on from Azure AD to SaaS apps, specifically for Workplace from Facebook"
+title: Getting started with Azure AD App Provisioning and single-sign-on
+subtitle: My first-ever blog post walks through how to configure automated user provisioning and single-sign-on from Azure AD to SaaS apps, specifically for Workplace from Facebook
 categories: AZUREAD IDENTITY PROVISIONING SSO
-thumbnail-img: "/assets/img/posts/2021-08-28/aad-sso-provisioning-thumb.png"
+thumbnail-img: /assets/img/posts/2021-08-28/aad-sso-provisioning-thumb.png
+author: Stian A. Strysse
 ---
 
 Azure AD has many key strengths and features, automated user provisioning and single-sign-on (SSO) capabilities for a number of SaaS apps being two of them. 
