@@ -4,6 +4,7 @@ title: Learning by Doing .cloud
 author: Stian A. Strysse
 description: A blog about cloud stuff
 show_downloads: false
+social-share: true
 twitter_username: stianstrysse
 github_username:  stianstrysse
 url: https://learningbydoing.cloud
@@ -16,3 +17,42 @@ navbar-links:
   About me: "aboutme"
 
 google_analytics: UA-206770361-1
+
+social-network-links:
+  github: stianstrysse
+  twitter: stianstrysse
+  linkedin: stianstrysse
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+url-pretty: "LearningByDoing.cloud"
+post_search: true
+
+exclude:
+- CHANGELOG.md
+- CNAME
+- Dockerfile
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+
+  # Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: false
