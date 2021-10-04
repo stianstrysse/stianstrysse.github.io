@@ -6,6 +6,7 @@ categories: AZUREAD OFFICE365 GRAPH POWERSHELL
 thumbnail-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
 share-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
 author: Stian A. Strysse
+date: 2021-10-04 08:03:00
 ---
 
 Intended for -- but not limited to -- IT Pros and developers who are familiar with Powershell or other scripting and code languages, who work with Microsoft cloud services, but still haven’t started to look into Microsoft Graph. The goal of this blogpost series is to understand what Microsoft Graph is and how to use it for administrative purposes and automation tasks in Azure AD plus related cloud services.

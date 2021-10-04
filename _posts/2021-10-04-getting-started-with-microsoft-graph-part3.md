@@ -5,7 +5,10 @@ subtitle: The third blogpost in the series explains the Graph Explorer.
 categories: AZUREAD OFFICE365 GRAPH POWERSHELL
 share-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
 author: Stian A. Strysse
+date: 2021-10-04 08:01:00
 ---
+
+Let's continue with this blogpost series by looking at Graph Explorer!
 
 *[Part 1](/blog/getting-started-with-microsoft-graph/)* --- *[Part 2](/blog/getting-started-with-microsoft-graph-part2/)* --- **Part 3** --- *[Part 4](/blog/getting-started-with-microsoft-graph-part4/)*
 

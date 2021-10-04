@@ -5,7 +5,10 @@ subtitle: The forth blogpost in the series explains the Graph Powershell SDK.
 categories: AZUREAD OFFICE365 GRAPH POWERSHELL
 share-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
 author: Stian A. Strysse
+date: 2021-10-04 08:00:00
 ---
+
+Let's continue with this blogpost series by looking at Microsoft Graph Powershell SDK!
 
 *[Part 1](/blog/getting-started-with-microsoft-graph/)* --- *[Part 2](/blog/getting-started-with-microsoft-graph-part2/)* --- *[Part 3](/blog/getting-started-with-microsoft-graph-part3/)* --- **Part 4**
 

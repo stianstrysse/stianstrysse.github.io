@@ -5,7 +5,10 @@ subtitle: The second blogpost in the series explains the Microsoft Graph.
 categories: AZUREAD OFFICE365 GRAPH POWERSHELL
 share-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
 author: Stian A. Strysse
+date: 2021-10-04 08:02:00
 ---
+
+Let's continue with this blogpost series by looking at Microsoft Graph!
 
 *[Part 1](/blog/getting-started-with-microsoft-graph/)* --- **Part 2** --- *[Part 3](/blog/getting-started-with-microsoft-graph-part3/)* --- *[Part 4](/blog/getting-started-with-microsoft-graph-part4/)*
 
