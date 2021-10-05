@@ -17,7 +17,7 @@ navbar-links:
   About me: "aboutme"
 
 plugins:
-  jekyll-sitemap
+  - jekyll-sitemap
 
 google_analytics: UA-206770361-1
 
