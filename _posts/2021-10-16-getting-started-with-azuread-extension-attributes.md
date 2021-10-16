@@ -75,7 +75,7 @@ If you get a HTTP 204 response (no content), the patch was successfull.
 
 You can now retrieve the custom extension attribute on the Userobject.
 
-- In [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), set method to `Get` with resource Uri `https://graph.microsoft.com/v1.0/users/{user objectId or upn}}`, insert the objectId or UserPrincipalName of the user you populated the extension attribute for, add `id`, `displayName`, `userPrincipalName` and the custom extension attribute name to the `select` query parameter.
+- In [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), set method to `Get` with resource Uri `https://graph.microsoft.com/v1.0/users/{user objectId or upn}`, insert the objectId or UserPrincipalName of the user you populated the extension attribute for, add `id`, `displayName`, `userPrincipalName` and the custom extension attribute name to the `select` query parameter.
 
     ```
     GET https://graph.microsoft.com/v1.0/users/e600712c-2132-455f-8d9f-ae0fc5ac9abe?$select=id,displayName,userprincipalname,extension_cde0e9a5d3f44a81b81097334dbb9f66_ObjectLifeCycleState
@@ -85,4 +85,4 @@ You can now retrieve the custom extension attribute on the Userobject.
 
 And that concludes this blog post, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1431713008624054277) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-app-provisioning-activity-6837480708999548928--IJb).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1449486596957409282) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-extension-attributes-activity-6855253263042801665-6UV5).
