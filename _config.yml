@@ -16,6 +16,9 @@ navbar-links:
   Blog: "/"
   About me: "aboutme"
 
+plugins:
+  - jekyll-sitemap
+
 google_analytics: UA-206770361-1
 
 social-network-links:
