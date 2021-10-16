@@ -48,7 +48,7 @@ Custom extension attributes can be of the following types: `Binary`, `Boolean` (
     }
     ```
 
-    ![Graph Explorer Create Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-create-extattr.png)
+![Graph Explorer Create Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-create-extattr.png)
 
 Make a note of the `name` value in the response, as this is the full attribute name that can now be populated with a string value on User and Group objects in Azure AD. The attribute name consists of `extension_` + `Application (client) ID` + `attribute name`, which in this example is `extension_cde0e9a5d3f44a81b81097334dbb9f66_ObjectLifeCycleState`.
 
@@ -64,7 +64,7 @@ Now that we have created the custom extension attribute on an application and it
 
     ```
 
-    ![Graph Explorer Patch Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-patch-extattr.png)
+![Graph Explorer Patch Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-patch-extattr.png)
 
 If you get a HTTP 204 response (no content), the patch was successfull.
 
@@ -78,7 +78,7 @@ You can now retrieve the custom extension attribute on the Userobject.
     GET https://graph.microsoft.com/v1.0/users/e600712c-2132-455f-8d9f-ae0fc5ac9abe?$select=id,displayName,userprincipalname,extension_cde0e9a5d3f44a81b81097334dbb9f66_ObjectLifeCycleState
     ```
 
-    ![Graph Explorer Get Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-get-extattr.png)
+![Graph Explorer Get Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-get-extattr.png)
 
 And that concludes this blog post, thanks for reading!
 
