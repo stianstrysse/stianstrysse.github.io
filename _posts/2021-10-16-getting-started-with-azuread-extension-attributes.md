@@ -3,7 +3,7 @@ layout: post
 title: Getting started with Azure AD extension attributes
 subtitle: Learn how to add custom extension attributes to Azure AD objects
 categories: AZUREAD GRAPH POWERSHELL
-share-img: /assets/img/posts/2021-10-04/microsoft-graph-thumb.png
+share-img: /assets/img/posts/2021-10-16/aad-ext-attr-thumb.png
 author: Stian A. Strysse
 ---
 
@@ -12,6 +12,9 @@ If you need to populate values on Azure AD objects like users and groups, but th
 An example scenario is that you need to store some form of object lifecycle state value on an Azure AD object, like `Active`, `Inactive` or `PendingDeletion`, to use in reports and identity automation tasks.
 
 The custom extension attributes can be used with the following Azure AD object types: User, Group Organization, Device and Application.
+
+{: .box-warning}
+**Warning**: Never store sensitive information in attributes in Azure AD, as all users and applications can access the values.
 
 ## Create a new app registration
 
