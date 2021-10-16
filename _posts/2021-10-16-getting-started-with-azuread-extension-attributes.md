@@ -64,7 +64,9 @@ Now that we have created the custom extension attribute on an application and it
     ```
     POST https://graph.microsoft.com/v1.0/users/e600712c-2132-455f-8d9f-ae0fc5ac9abe
 
-
+    {
+        "extension_cde0e9a5d3f44a81b81097334dbb9f66_ObjectLifeCycleState": "Active"
+    }
     ```
 
 ![Graph Explorer Patch Ext Attribute](/assets/img/posts/2021-10-16/ms-graph-patch-extattr.png)
@@ -73,7 +75,7 @@ If you get a HTTP 204 response (no content), the patch was successfull.
 
 ## Retrieve custom extension attribute on a User object
 
-You can now retrieve the custom extension attribute on the Userobject.
+You can now retrieve the custom extension attribute on the User object.
 
 - In [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), set method to `Get` with resource Uri `https://graph.microsoft.com/v1.0/users/{user objectId or upn}`, insert the objectId or UserPrincipalName of the user you populated the extension attribute for, add `id`, `displayName`, `userPrincipalName` and the custom extension attribute name to the `select` query parameter.
 
