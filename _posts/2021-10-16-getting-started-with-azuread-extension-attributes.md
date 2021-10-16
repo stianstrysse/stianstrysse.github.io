@@ -4,6 +4,7 @@ title: Getting started with Azure AD extension attributes
 subtitle: Learn how to add custom extension attributes to Azure AD objects
 categories: AZUREAD GRAPH POWERSHELL
 share-img: /assets/img/posts/2021-10-16/aad-ext-attr-thumb.png
+thumbnail-img: /assets/img/posts/2021-10-16/aad-ext-attr-thumb.png
 author: Stian A. Strysse
 ---
 
