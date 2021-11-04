@@ -13,7 +13,7 @@ Custom Extensions really brings a new flavor to Entitlement Management. Let's fi
 
 ## What is Entitlement Management?
 
-Entitlement Management (ELM) is an Identity Governance feature in Azure AD that can manage identity and access lifecycle in an organization with the use of automated workflows for requests, approvals, assignments, reviews and expiration of access permissions. 
+Entitlement Management (ELM) is an [Identity Governance](https://docs.microsoft.com/en-us/azure/active-directory/governance/identity-governance-overview) feature in Azure AD that can manage identity and access lifecycle in an organization with the use of automated workflows for requests, approvals, assignments, reviews and expiration of access permissions. 
 
 Basically, you create an access catalog and add resources like Azure AD security groups, Microsoft 365 groups, SharePoint sites and applications to it - before creating one or more access packages with assigned roles to one or more of those resources including role scope (e.g. member or owner on a group). Then you add an assignment policy controlling who can request access, who can approve access requests, who must do an access review at given intervals, and specify access expiration if required. Once a user request access to the access package, and the request is approved, the access role is granted to the user for all assigned resource role scopes.
 
