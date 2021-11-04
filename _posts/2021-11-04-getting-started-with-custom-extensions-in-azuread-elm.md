@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Custom Extensions in Entitlement Management for Azure AD
-subtitle: Microsoft released a new public preview feature for Azure AD Identity Governance during Ignite this week, namely Custom Extensions for Entitlement Management. Let's dive into what it is and how to use it for managing identity and access management via automation.
+subtitle: Microsoft released a new public preview feature for Azure AD Identity Governance during Ignite this week, namely Custom Extensions for Entitlement Management. Let's dive into what it is and how to use it for identity and access lifecycle management automation.
 categories: AZUREAD IDENTITY GOVERNANCE ELM ENTITLEMENT MANAGEMENT
 thumbnail-img: /assets/img/posts/2021-11-04/aad-elm-thumbnail.png
 author: Stian A. Strysse
@@ -21,7 +21,7 @@ It’s also a great way of doing lifecycle management on B2B users - if a guest 
 
 ## What is Custom Extensions in ELM?
 
-The latest addition in ELM is a feature named Custom Extensions. With this feature you can trigger a Logic App in Azure when certain activities occur within an access package, like someone requesting or approving access, when access is activated or removed, or when expiration is near. Custom Extensions and Logic Apps really brings something new to the table, the automation possibilities are huge: send an email when someone is granted an access package, send a REST call to an API when someone is removed from an access package, trigger another Logic App or even a Function App etc.
+The latest addition in ELM is a feature named [Custom Extensions](https://docs.microsoft.com/en-gb/azure/active-directory/governance/entitlement-management-logic-apps-integration). With this feature you can trigger a Logic App in Azure when certain activities occur within an access package, like someone requesting or approving access, when access is activated or removed, or when expiration is near. Custom Extensions and Logic Apps really brings something new to the table, the automation possibilities are huge: send an email when someone is granted an access package, send a REST call to an API when someone is removed from an access package, trigger another Logic App or even a Function App etc.
 
 The Custom Extensions feature is currently in public preview.
 
@@ -83,7 +83,7 @@ In this scenario you will need a tenant with an Office 365 license for Teams, Az
         {: .box-note}
         **Note:** At the time of writing, specifying Logic App triggers during creation of an access package does not seem to work. Instead, create the access package without any rules, then re-open the created access package, go to **Policies** -> **Initial Policy** -> **Edit**, then go to the **Rules** tab and set up the triggers.
 
-    All right, the prerequisites are in place, now let's jump over to the next part.
+All right, the prerequisites are in place, now let's jump over to the next part.
 
 ## Create Teams Webhook
 
@@ -194,6 +194,8 @@ If you go back to the Logic App and view **Run history** in the **Overview** tab
 }
 ```
 
+This was just a very simple scenario to get you started, but the automation possibilities here are nearly endless. Kudos to Microsoft for adding this capability to ELM.
+
 And that concludes this blog post, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1449486596957409282) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-azure-ad-extension-attributes-activity-6855253263042801665-6UV5).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1456205453554245636) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-extensions-in-activity-6861971740709416960-vIog).
