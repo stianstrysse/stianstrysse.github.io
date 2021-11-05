@@ -30,7 +30,7 @@ The Custom Extensions feature is currently in public preview.
 I’ll walk you through the setup of an access package catalog with Custom Extensions. In this scenario we will trigger a Logic App which posts a message to a specific Teams channel every time an access package assignment or removal is completed. This is just a simple scenario to get you started!
 
 {: .box-note}
-**Note:** Microsoft is working on adding Custom Extensions endpoint to the Graph beta API, so until further notice this can only configured through the Azure portal.
+**Note:** Microsoft is working on adding Custom Extensions endpoint to the Graph beta API, so until further notice this can only be configured through the Azure portal.
 
 In this scenario you will need a tenant with an Office 365 license for Teams, Azure AD P2 license for ELM and an Azure subscription with Contributor access for the Logic App.
 
@@ -193,6 +193,17 @@ If you go back to the Logic App and view **Run history** in the **Overview** tab
     }
 }
 ```
+
+Notice the `Event` value in the JSON payload. The following events will be posted to the Logic App if created as a rule in the access package:
+
+| Stage | Event value | Description |
+|:------|-------------|------------:|
+| Request is created | AssignmentRequestCreated | Request is created |
+| Request is approved | AssignmentRequestApproved | Request is approved |
+| Request is granted | AssignmentRequestGranted | Access package is assigned |
+| Assignment is about to expire in 14 days | AssignmentNear14daysExpiration | Access package assignment expires in 14 days |
+| Assignment is about to expire in 1 day | AssignmentNear1dayExpiration | Access package assignment expires in 1 day |
+| Assignment is removed | AssignmentRemoved | Access package is unassigned |
 
 This was just a very simple scenario to get you started, but the automation possibilities here are nearly endless. Kudos to Microsoft for adding this capability to ELM.
 
