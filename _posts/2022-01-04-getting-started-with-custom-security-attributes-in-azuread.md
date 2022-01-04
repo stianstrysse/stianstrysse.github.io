@@ -225,4 +225,4 @@ In my view the most important known issue is that Global Admins can read Azure A
 
 And that concludes this blogpost, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1456205453554245636) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-security-attributes-activity-6884103665645318144-YHC_).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1478337726948810752) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-security-attributes-activity-6884103665645318144-YHC_).
