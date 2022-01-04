@@ -7,9 +7,9 @@ thumbnail-img: /assets/img/posts/2022-01-04/aad-custsecattribs-thumbnail.png
 author: Stian A. Strysse
 ---
 
-![AAD Custom Sec thumb](/assets/img/posts/2022-01-04/aad-custsecattribs-thumbnail.png)
-
 Azure AD has a schema with common attributes for resources like users, e.g. `displayName`, `userPrincipalName`, `companyName`, `department` and so on. You can also [add custom extension attributes via an Application object](https://learningbydoing.cloud/blog/getting-started-with-azuread-extension-attributes/) to extend the schema. However, these attributes are public for all Azure AD users in the organization and should never contain sensitive information. But, what if you need to set a HR termination date on Azure AD users to be consumed by an automation process, or set other sensitive attributes which should only be visible for certain individuals in the organization? And what if you want to control access to Azure resources using attribute values?
+
+![AAD Custom Sec thumb](/assets/img/posts/2022-01-04/aad-custsecattribs-thumbnail.png)
 
 You now have a way to solve this with Microsoft's public preview of [Custom Security Attributes](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure AD. Custom Security Attributes are organization-specific key-value paired attributes that can be assigned to Azure AD objects like Users, Service Principals and Managed Identities. This type of attribute is by default not available to anyone, not even Global Admins, without specifically assigning permissions.
 
