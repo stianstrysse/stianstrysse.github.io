@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Custom Security Attributes and ABAC in Azure AD
+title: Getting started with Custom Security Attributes in Azure AD
 subtitle: This blogpost explores the new Custom Security Attributes public preview feature in Azure AD
 categories: AZUREAD AZURE IDENTITY GOVERNANCE ABAC RBAC
 thumbnail-img: /assets/img/posts/2022-01-04/aad-custsecattribs-thumbnail.png
@@ -14,6 +14,16 @@ You now have a way to solve this with Microsoft's public preview of [Custom Secu
 License requirement for Custom Security Attributes is *Azure AD Premium P1*.
 
 Let's dive into this functionality to see how it's set up and how it can be used.
+
++ [Assign Azure AD roles for managing Custom Security Attributes, Sets, assignments and values](#assign-azure-ad-roles-for-managing-custom-security-attributes-sets-assignments-and-values)
++ [Create an Attribute Set](#create-an-attribute-set)
++ [Create Custom Security Attributes](#create-custom-security-attributes)
++ [Assign Custom Security Attribute to a user](#assign-custom-security-attribute-to-a-user)
++ [Control Azure Storage Blob access with ABAC](#control-azure-storage-blob-access-with-abac)
++ [The future of Custom Security Attributes](#the-future-of-custom-security-attributes)
++ [Known issues with Custom Security Attributes](#known-issues-with-custom-security-attributes)
+
+![AAD Custom Sec thumb](/assets/img/posts/2022-01-04/aad-custsecattribs-thumbnail.png)
 
 ### Assign Azure AD roles for managing Custom Security Attributes, Sets, assignments and values
 
@@ -213,6 +223,8 @@ At the time of writing there are some [known issues listed on Microsoft Docs](ht
 
 In my view the most important known issue is that Global Admins can read Azure AD audit logs to see Custom Security Attribute definitions and assignments, including Attribute values. If you export audit logs elsewhere then others might also be able to view these. Also, users with attribute set-level role assignments can view other Attribute Sets and Custom Security Attribute definitions. And the current lack of read-only Graph scope is also a downside. So you might want to wait with adding highly sensitive attribute values until the feature goes GA.
 
+<!---
 And that concludes this blogpost, thanks for reading!
 
 Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1456205453554245636) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-extensions-in-activity-6861971740709416960-vIog).
+-->
