@@ -209,7 +209,7 @@ This example was for assigning a `string` Attribute. See the [Graph documentatio
 
 In the [Introducing Azure AD custom security attributes](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-azure-ad-custom-security-attributes/ba-p/2147068) article posted in the Azure Active Directory blog on December 1, 2021, Microsoft explains that Custom Security Attributes builds on the ABAC public preview. Now you can grant users access to Azure Blob Storage with [Attribute-based Access Control (ABAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/conditions-overview) utilizing Custom Security Attributes instead of just through Role-Based Access Control (RBAC), which means fine-grained access control with fewer Azure role assignments.
 
-~~Let's test it out!~~ - I have unfortunately not been successfull in getting ABAC conditions in Azure Storage Blobs to work with Custom Security Attributes yet. I'm in contact with Microsoft to verify the setup, and I will update this blogpost with details on how to configure it later.
+I'm working on a new blogpost that will explore this feature paired with Custom Security Attributes, stay tuned!
 
 ### The future of Custom Security Attributes
 
