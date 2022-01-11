@@ -123,7 +123,7 @@ Next up is to create one or more Custom Security Attributes in our new Attribute
         "description":"ProjectID for the assigned BusinessProject",
         "isCollection":false,
         "isSearchable":true,
-        "id":"ProjectID",
+        "name":"ProjectID",
         "status":"Available",
         "type":"String",
         "usePreDefinedValuesOnly": false
