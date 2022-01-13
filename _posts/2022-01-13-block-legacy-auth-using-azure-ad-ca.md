@@ -3,7 +3,7 @@ layout: post
 title: Block legacy authentication protocols using Azure AD Conditional Access policy
 subtitle: Let's look at blocking legacy authentication protocols in a global company's Azure AD with full control and ease of mind
 categories: AZUREAD AZURE IDENTITY GOVERNANCE CONDITIONAL ACCESS POLICY
-thumbnail-img: /assets/img/posts/2022-01-04/aad-disable-legacy-auth-thumbnail.png
+thumbnail-img: /assets/img/posts/2022-01-13/aad-disable-legacy-auth-thumbnail.png
 author: Stian A. Strysse
 ---
 
