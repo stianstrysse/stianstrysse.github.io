@@ -217,4 +217,4 @@ As already mentioned, Microsoft have [announced](https://techcommunity.microsoft
 
 And that concludes this blogpost, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1478337726948810752) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-security-attributes-activity-6884103665645318144-YHC_).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1481631988163481603) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_block-legacy-authentication-protocols-using-activity-6887398015359819776-ScE5).
