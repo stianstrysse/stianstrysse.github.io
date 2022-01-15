@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2022-01-15/az-abac-conditions-thumbnail.png
 author: Stian A. Strysse
 ---
 
-Last week I published a [blog post describing the basics of Custom Security Attributes](https://learningbydoing.cloud/blog/getting-started-with-custom-security-attributes-in-azuread/), and how it can be utilized paired with ABAC. Now I will dive further into this topic and describe how to get a working configuration with ABAC conditions using Custom Security Attributes for [Azure Storage Blobs](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction).
+Last week I published a [blog post describing the basics of Custom Security Attributes](https://learningbydoing.cloud/blog/getting-started-with-custom-security-attributes-in-azuread/), and how it can be utilized paired with ABAC. Now I will dive further into this topic and describe how to get a working configuration with ABAC conditions using Custom Security Attributes for [Azure Blobs Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction).
 
 ![Azure ABAC conditions thumbnail](/assets/img/posts/2022-01-15/az-abac-conditions-thumbnail.png)
 
