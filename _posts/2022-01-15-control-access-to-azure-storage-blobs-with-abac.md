@@ -204,4 +204,4 @@ I believe and hope that we will see a lot more support for ABAC and Custom Secur
 
 And that concludes this blogpost, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1478337726948810752) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_getting-started-with-custom-security-attributes-activity-6884103665645318144-YHC_).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1482325535703379969) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_control-access-to-azure-storage-blobs-with-activity-6888090844876832768-mxFq).
