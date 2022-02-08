@@ -4,9 +4,9 @@ title: "/whoami"
 ---
 
 **Stian A. Strysse**  
-*Senior Solution Consultant @ TietoEVRY*
+*Sr. Identity Architect @ Storebrand*
  
-Specializing in Identity, Access, Security & Cloud technology - specifically in the Azure space.
+Specializing in Identity, Access, Security & Cloud technology - specifically in Azure.
 
 ![Profile Photo](/assets/img/thisisme-profile.png)
 
