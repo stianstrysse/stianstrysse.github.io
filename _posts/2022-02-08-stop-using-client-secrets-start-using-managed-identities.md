@@ -41,7 +41,7 @@ Some examples:
 
 There are two types of Managed Identities:
 
-1. `System assigned`: This is a Managed Identity enabled directly on a specific Azure resource, like an Azure Virtual Machine or a Logic App. Once an Azure resource is enabled with a system-assigned Managed Identity, a Service Principal identity object is created in Azure AD which will follow the lifecycle of that Azure resource - meaning that if the Azure resource that enabled the Managed Identity is deleted, the identity object is also deleted. A system-assigned Managed Identity can only be used by the specific Azure resource it is enabled for.
+1. `System assigned`: This is a Managed Identity enabled directly on a specific Azure resource, like an Azure Virtual Machine or a Logic App. Once an Azure resource is enabled with a system-assigned Managed Identity, a Service Principal identity object is created in Azure AD which will follow the lifecycle of that Azure resource - meaning that if the Azure resource which enabled the Managed Identity is deleted, the identity object is also deleted. A system-assigned Managed Identity can only be used by the specific Azure resource it is enabled for.
 2. `User assigned`: This is a Managed Identity created as a standalone Azure resource within a resource group, which can then be assigned to one or more Azure resources, like an Azure Virtual Machine and a Logic App. This also creates a Service Principal identity object in Azure AD which will follow the lifecycle of that specific Managed Identity resource, and not the lifecycle of any Azure resources the Managed Identity is assigned to.
 
 {: .box-note}
@@ -128,4 +128,4 @@ Refer to [Microsoft docs](https://docs.microsoft.com/en-us/azure/active-director
 
 And that concludes this blog post, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1482325535703379969) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_control-access-to-azure-storage-blobs-with-activity-6888090844876832768-mxFq).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1491130326252670976) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_stop-using-client-secrets-and-certificates-activity-6896896311590039552-Ofp6).
