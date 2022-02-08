@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stop using client secrets and certificates, start using Managed Identities
-subtitle: Managed Identities can be used instead of app client secrets and certificates for Azure resources authenticating to Azure AD. Let's look at what what a Managed Identity is and how to use it.
+subtitle: Managed Identities can be used instead of app client secrets and certificates for Azure resources authenticating to Azure AD. Let's look at what a Managed Identity is and how to use it.
 categories: AZUREAD AZURE IDENTITY GOVERNANCE MSI MANAGEDIDENTITY
 thumbnail-img: /assets/img/posts/2022-02-08/aad-managed-identity-thumbnail.png
 author: Stian A. Strysse
