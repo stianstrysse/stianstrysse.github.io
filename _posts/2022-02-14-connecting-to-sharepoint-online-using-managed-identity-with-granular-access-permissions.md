@@ -167,4 +167,4 @@ Now you know how to utilize `Sites.Selected` application scope and app access ro
 
 And that concludes this blog post, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1491130326252670976) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_stop-using-client-secrets-and-certificates-activity-6896896311590039552-Ofp6).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1493268699553402886) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_connecting-to-sharepoint-online-using-managed-activity-6899036444107911168-_pTt).
