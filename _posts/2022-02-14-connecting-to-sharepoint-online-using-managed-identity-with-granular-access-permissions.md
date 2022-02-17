@@ -61,7 +61,9 @@ The prerequisites are completed, now over to grant permissions.
 
 ## Grant application scope in Microsoft Graph
 
-Adding application scopes in the Azure AD Portal GUI doesn't seem to be possible for Managed Identities, so I used **Cloud Shell** in the Azure Portal and the following Powershell code to grant the `Sites.Selected` application scope to the Logic App's Managed Identity. `$ObjectId` is set to the guid value of `Object (principal) ID` for the Managed Identity noted down earlier.
+I used the **Microsoft Graph PowerShell SDK** to grant the `Sites.Selected` application scope in Microsoft Graph. Check out my blog post [What is Microsoft Graph PowerShell SDK](https://learningbydoing.cloud/blog/getting-started-with-microsoft-graph-part4/) if you need help on getting started with it.
+
+`$ObjectId` is set to the guid value of `Object (principal) ID` for the Managed Identity noted down earlier.
 
 ```powershell
 # Add the correct 'Object (principal) ID' for the Managed Identity
@@ -70,72 +72,66 @@ $ObjectId = "e8800382-610d-4761-9b15-873065e53227"
 # Add the correct Graph scope to grant
 $graphScope = "Sites.Selected"
 
-Connect-AzureAD
-$graph = Get-AzureADServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'" 
+Connect-MgGraph -Scope AppRoleAssignment.ReadWrite.All
+$graph = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'"
 $graphAppRole = $graph.AppRoles | ? Value -eq $graphScope
-New-AzureADServiceAppRoleAssignment -Id $graphAppRole.Id -PrincipalId $ObjectId -ResourceId $graph.ObjectId -ObjectID $ObjectID
+
+$appRoleAssignment = @{
+    "principalId" = $ObjectId
+    "resourceId"  = $graph.Id
+    "appRoleId"   = $graphAppRole.Id
+}
+
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $ObjectID -BodyParameter $appRoleAssignment | Format-List
 ```
 
 Running the Powershell code produced the following output in the console, indicating that the scope was successfully granted.
 
 ```text
-ObjectId      ResourceDisplayName PrincipalDisplayName
---------      ------------------- --------------------
-ggOA6A1hYU... Microsoft Graph     lbd-m365-automation-la
+AppRoleId            : 883ea226-0bf2-4a8f-9f9d-92c9162a727d
+CreatedDateTime      : 14.02.2022 07:45:10
+DeletedDateTime      :
+Id                   : 9Uv0TSLb...Yw3xRUH8
+PrincipalDisplayName : lbd-m365-automation-la
+PrincipalId          : e8800382-610d-4761-9b15-873065e53227
+PrincipalType        : ServicePrincipal
+ResourceDisplayName  : Microsoft Graph
+ResourceId           : 07165e04-89b3-4996-8b1d-a2a225eb5104
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('e8800382-610d-4761-9b15-873065e53227')/appRoleAssignments/$entity]}
 ```
 
 The Managed Identity now has the `Sites.Selected` application scope in Microsoft Graph, but still requires app access within the specific SharePoint site.
 
 ## Grant app access to a specific SharePoint site
 
-Using [Graph Explorer](https://learningbydoing.cloud/blog/getting-started-with-microsoft-graph-part3/#what-is-graph-explorer) I added **app access** with **write** role for the Logic App's Managed Identity to the specific SharePoint Online site in Microsoft Graph. `id` in the `body` of the request is set to the guid value of `Application ID` for the Managed Identity noted down earlier.
+I used the **Microsoft Graph PowerShell SDK** to grant the Managed Identity app access to the SharePoint site. Check out my blog post [What is Microsoft Graph PowerShell SDK](https://learningbydoing.cloud/blog/getting-started-with-microsoft-graph-part4/) if you need help on getting started with it.
 
-```json
-POST https://graph.microsoft.com/v1.0/sites/<tenant>.sharepoint.com:/sites/LBDM365Automation:/permissions
-Content-Type: application/json
+`id` in the `application` hashtable is set to the guid value of `Application ID` for the Managed Identity noted down earlier.
 
-{
-    "roles": [
-        "write"
-    ],
-    "grantedToIdentities": [
-        {
-            "application": {
-                "id": "827fc69f-2814-44d7-96bc-492f2bf21c83",
-                "displayName": "lbd-m365-automation-la"
-            }
-        }
-    ]
+```powershell
+# Add the correct 'Application (client) ID' and 'displayName' for the Managed Identity
+$application = @{
+    id = "827fc69f-2814-44d7-96bc-492f2bf21c83"
+    displayName = "lbd-m365-automation-la"
 }
+
+# Add the correct role to grant the Managed Identity (read or write)
+$appRole = "write"
+
+# Add the correct SharePoint Online tenant URL and site name
+$spoTenant = "winterlandasa.sharepoint.com"
+$spoSite  = "LBDM365Automation"
+
+# No need to change anything below
+$spoSiteId = $spoTenant + ":/sites/" + $spoSite + ":"
+
+Import-Module Microsoft.Graph.Sites
+Connect-MgGraph -Scope Sites.FullControl.All
+
+New-MgSitePermission -SiteId $spoSiteId -Roles $appRole -GrantedToIdentities @{ Application = $application }
 ```
 
-Graph responded with `Created - 201` status code and the following response body.
-
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.permission)/$entity",
-    "id": "aTowaS50fG1zLnNwLmV4dHw4MjdmYzY5Zi0yODE0LTQ0ZDctOTZiYy00OTJmMmJmMjFjODNANTZhYTBmYTUtYjdkZC00ZGJjLTgxZGEtM2Q1N2IyZDc5ZmZm",
-    "roles": [
-        "write"
-    ],
-    "grantedToIdentitiesV2": [
-        {
-            "application": {
-                "displayName": "lbd-m365-automation-la",
-                "id": "827fc69f-2814-44d7-96bc-492f2bf21c83"
-            }
-        }
-    ],
-    "grantedToIdentities": [
-        {
-            "application": {
-                "displayName": "lbd-m365-automation-la",
-                "id": "827fc69f-2814-44d7-96bc-492f2bf21c83"
-            }
-        }
-    ]
-}
-```
+Running the Powershell code produced the output of a permission Id in the console, indicating that the permission was successfully granted.
 
 The Logic App's Managed Identity should now have enough permissions to both read and write the SharePoint List items via Microsoft Graph.
 
