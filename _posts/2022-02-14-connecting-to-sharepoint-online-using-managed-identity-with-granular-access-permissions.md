@@ -119,7 +119,7 @@ $application = @{
 $appRole = "write"
 
 # Add the correct SharePoint Online tenant URL and site name
-$spoTenant = "winterlandasa.sharepoint.com"
+$spoTenant = "tenant.sharepoint.com"
 $spoSite  = "LBDM365Automation"
 
 # No need to change anything below
