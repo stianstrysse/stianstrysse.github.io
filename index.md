@@ -6,3 +6,5 @@ subtitle: A blog about cloud stuff
 show-avatar: false
 share-img: "/assets/img/share-img.png"
 ---
+
+![Site Img](/assets/img/share-img.png)
