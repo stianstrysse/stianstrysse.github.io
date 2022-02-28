@@ -1,6 +1,6 @@
 #theme: jekyll-theme-tactile
 remote_theme: daattali/beautiful-jekyll
-title: Learning by Doing .cloud
+title: LearningByDoing.cloud
 author: Stian A. Strysse
 description: A blog about cloud stuff
 show_downloads: false
@@ -12,7 +12,6 @@ url: https://learningbydoing.cloud
 permalink: /blog/:title/
 avatar: "/assets/img/thisisme-profile.png"
 #title-img: "/assets/img/site-logo.png"
-show-avatar: false
 
 navbar-links:
   Blog: "/"
