@@ -1,10 +1,11 @@
 ---
 layout: page
 title: "/whoami"
+show-avatar: false
 ---
 
 **Stian A. Strysse**  
-*Sr. Identity Architect @ Storebrand*
+*Sr. Identity Architect*
  
 Specializing in Identity, Access, Security & Cloud technology - specifically in Azure.
 
