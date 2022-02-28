@@ -10,7 +10,7 @@ github_username:  stianstrysse
 url: https://learningbydoing.cloud
 #permalink: /:year/:month/:day/:title/
 permalink: /blog/:title/
-avatar: "/assets/img/thisisme.jpg"
+avatar: "/assets/img/thisisme-profile.png"
 
 navbar-links:
   Blog: "/"
