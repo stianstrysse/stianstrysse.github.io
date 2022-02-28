@@ -11,6 +11,7 @@ url: https://learningbydoing.cloud
 #permalink: /:year/:month/:day/:title/
 permalink: /blog/:title/
 avatar: "/assets/img/thisisme-profile.png"
+title-img: "/assets/img/site-logo.png"
 
 navbar-links:
   Blog: "/"
