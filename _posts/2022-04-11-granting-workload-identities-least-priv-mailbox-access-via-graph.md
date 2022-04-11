@@ -213,4 +213,4 @@ This means the Exchange Online policy works, as it only allows the managed ident
 
 Now you know how to scope Graph mailbox permissions for workload identities down to specific mailboxes, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1481631988163481603) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_block-legacy-authentication-protocols-using-activity-6887398015359819776-ScE5).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1513490814776885249) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_granting-workload-identities-least-privilege-activity-6919256803994124288-HxZF).
