@@ -2,6 +2,7 @@
 layout: post
 title: Granting workload identities least-privilege mailbox access via Microsoft Graph
 subtitle: Workload identities, meaning apps, managed identities and other service principals, can be granted tenant-wide application access to all mailbox resources via Microsoft Graph. Learn how to scope permissions down to specific mailboxes.
+thumbnail-img: /assets/img/share-img.png
 categories: AZUREAD AZURE IDENTITY GOVERNANCE MSI MANAGEDIDENTITY GRAPH MICROSOFTGRAPH LEASTPRIVILEGE
 author: Stian A. Strysse
 ---
@@ -132,7 +133,7 @@ The following Powershell code will create a new **application access policy** in
 {: .box-note}
 **Note**: It is the actual `app id` of the service principal, and not the `object (Principal) id` which must be targeted for the policy to work. This is why the Powershell code looks up the service principal object.
 
-In the script below, make sure to add the correct `Object (principal) ID` as noted down earlier for the managed identity. It requires an Exchange online Powershell session, use Azure Cloud Shell for easy access.
+In the script below, make sure to add the correct `Object (principal) ID` as noted down earlier for the managed identity. It requires an Exchange Online Powershell session, use Azure Cloud Shell for easy access.
 
 ```powershell
 # Policy configuration
@@ -210,6 +211,6 @@ Now, by changing the `ObjectID` in the `URI` to an id for a mailbox user which i
 
 This means the Exchange Online policy works, as it only allows the managed identity to send mail via Graph as a mailbox which is a member of the scoped mail-enabled security group.
 
-Now you know how to scope Graph mailbox permissions down to specific mailboxes, thanks for reading!
+Now you know how to scope Graph mailbox permissions for workload identities down to specific mailboxes, thanks for reading!
 
 Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1481631988163481603) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_block-legacy-authentication-protocols-using-activity-6887398015359819776-ScE5).
