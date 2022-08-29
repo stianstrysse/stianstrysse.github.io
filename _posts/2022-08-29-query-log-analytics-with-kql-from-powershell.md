@@ -89,4 +89,4 @@ The output will either be `null` if a record wasn't found, or the `dateTime` of 
 
 The idea behind this KQL query is to report on users with eligible Azure AD administrative roles never being activated in PIM. Why have an eligible role if it's not being used, right? Anyways, this was just to get you started with KQL for extracting Azure AD log data. Dive into the links I posted at the start of the blogpost to learn more, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1513490814776885249) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_granting-workload-identities-least-privilege-activity-6919256803994124288-HxZF).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1564331521716150279) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_query-azure-ad-logs-with-kql-from-powershell-activity-6970097540348149760-q-zg).
