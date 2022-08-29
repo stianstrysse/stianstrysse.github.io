@@ -9,8 +9,8 @@ author: Stian A. Strysse
 
 KQL, short for `Kusto Query Language`, is really great for quering data sets like `Sign-in Logs` and `Audit Logs` in Azure AD. KQL is what Microsoft Sentinel uses under the hood for discovering threats, detections and anomalies in larger data sets. But you can also use it to retrieve simpler log entries like:
 
-* What was the properties for the user with a certain `objectId` and when was it deleted.
-* How often is a specific user elevating into an Azure AD administrative role in PIM.
+* Who deleted a specific user.
+* How often is a user elevating into an Azure AD administrative role in PIM.
 * When was a user added to or removed from a specific Azure AD security group.
 
 Since logs in Azure AD are usually [deleted after 7-30 days](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/reference-reports-data-retention) depending on tenant licensing, it's important to export these logs to a Log Analytics workspace for safekeeping. If the logs aren't exported, there is no way to retrieve them back once they are deleted. You never know when you need to figure out when something happened and who or what actually did it, so having the logs available is key both for security and compliance.
