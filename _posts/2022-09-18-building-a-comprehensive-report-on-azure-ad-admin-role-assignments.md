@@ -205,7 +205,7 @@ if($mfaRegistrationDetailsHashmap.ContainsKey("$($roleObject.Principal.Id)")) {
 
 ### Admin account owner
 
-If you're following [Microsoft best practise](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-planning) and separating normal user accounts from administrative roles, you should be having a separate admin account for each user who requires privileged roles and access.
+If you're following [Microsoft best-practises](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-planning) and separating normal user accounts from administrative roles, you should be having a separate admin account for each user who requires privileged roles and access.
 
 When having separate admin accounts it's also important to check account status of the admin account owners if possible - to make sure that all admin accounts of terminated employees have been disabled and/or deleted. This query will depend on how you identify admin account owners in your tenant, the following example extracts the owner's accountName from the UPN and queries Graph for any user with that `onPremisesSamAccountName` + `employeeId`.
 
@@ -338,13 +338,13 @@ Assignment End Date        : 20.02.2023 09:19:13
 Has End Date               : True
 Custom Role                : True
 Role Template              : 8ae1d011-0ae3-4cdf-b6c2-d6fb5cae8254
-AdminOwner Company    : Some Company Ltd
-AdminOwner Department : IT
-AdminOwner Name       : Adele Vance
-AdminOwner UPN        : AdeleV@tenant.onmicrosoft.com
-AdminOwner EmployeeId : 123456
-AdminOwner Enabled    : True
-AdminOwner LastSignIn : 18.09.2022 10:49:55
+AdminOwner Company         : Some Company Ltd
+AdminOwner Department      : IT
+AdminOwner Name            : Adele Vance
+AdminOwner UPN             : AdeleV@tenant.onmicrosoft.com
+AdminOwner EmployeeId      : 123456
+AdminOwner Enabled         : True
+AdminOwner LastSignIn      : 18.09.2022 10:49:55
 ```
 
 Service Principal with role assignment:
@@ -417,4 +417,4 @@ In case you need more tips on creating a reporting powershell script for this re
 
 Thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1564331521716150279) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_query-azure-ad-logs-with-kql-from-powershell-activity-6970097540348149760-q-zg).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1571572424516448256) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_building-a-comprehensive-report-on-azure-activity-6977338056408219649-KTgg).
