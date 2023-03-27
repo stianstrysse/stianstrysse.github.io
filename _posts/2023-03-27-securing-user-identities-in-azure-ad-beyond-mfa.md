@@ -37,7 +37,7 @@ From Azure AD's perspective, all networks should be treated as the rest of the I
 
 Protect Azure AD user accounts further with Identity Protection signals and Conditional Access policies. Block `high-risk` sign-ins and users - especially if a SOC is present and can act on such events to investigate and quickly remediate both for the sake of security and user productivity.
 
-`Medium-risk` sign-ins could [trigger full re-authentication with MFA](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/new-require-reauthentication-for-intune-enrollment-or-risk/), and `medium-risk` users could trigger full re-authentication with secure password-change through [self-service password reset](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr). This would assist users in helping themselves to get out of a potentially bad situation.
+`Medium-risk` sign-ins could [trigger full re-authentication with MFA](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/new-require-reauthentication-for-intune-enrollment-or-risk/ba-p/3299049), and `medium-risk` users could trigger full re-authentication with secure password-change through [self-service password reset](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr). This would assist users in helping themselves to get out of a potentially bad situation.
 
 ## Block unknown devices
 
@@ -51,7 +51,7 @@ With this Conditional Access policy in place the attacker would be stopped dead 
 
 Deviation from the default sign-in frequency for standard users, which is a rolling window of 90 days, is likely not a good strategy for managed devices in the organization. It may impact user productivity, and will likely annoy users more than securing them.
 
-However, in certain scenarios for `specific personas` it makes sense to both configure sign-in frequency to a day or less - and to disallow persistent browser session in one go:
+However, in certain scenarios for specific `personas` it makes sense to both configure sign-in frequency to a day or less - and to disallow persistent browser session in one go:
 
 * Highly privileged user accounts.
 * Users accessing apps from unmanaged devices.
