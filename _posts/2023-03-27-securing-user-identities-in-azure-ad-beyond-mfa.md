@@ -2,7 +2,7 @@
 layout: post
 title: Securing user identities in Azure AD beyond MFA
 subtitle: In today's threat landscape it's important to be healthy paranoid and always re-think how attackers could potentially breach an organization's defenses. So let's explore how to protect user identities in Azure AD beyond MFA
-thumbnail-img: /assets/img/posts/2023-03-27/idm-beyond-mfa.jpeg
+thumbnail-img: /assets/img/posts/2023-03-27/beyond-mfa.png
 categories: AZUREAD AZURE IDENTITY MFA ZEROTRUST FIDO2
 author: Stian A. Strysse
 ---
