@@ -70,4 +70,4 @@ While we're talking about Conditional Access policies, I highly recommend lookin
 
 That's it for now, thanks for reading - and keep on securing those identities!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1571572424516448256) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_building-a-comprehensive-report-on-azure-activity-6977338056408219649-KTgg).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1640426366603542545), [LinkedIn](https://www.linkedin.com/posts/stianstrysse_securing-user-identities-in-azure-ad-beyond-activity-7046191571314032641-EZ8T) or [Mastadon](https://infosec.exchange/@stians/110096763996667030).
