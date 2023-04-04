@@ -74,4 +74,4 @@ This makes it so much easier to elevate into a role for the scope of a resource 
 
 That's it for now, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1640426366603542545), [LinkedIn](https://www.linkedin.com/posts/stianstrysse_securing-user-identities-in-azure-ad-beyond-activity-7046191571314032641-EZ8T) or [Mastadon](https://infosec.exchange/@stians/110096763996667030).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1643326509036306436), [LinkedIn](https://www.linkedin.com/posts/stianstrysse_follow-just-enough-access-principle-by-activity-7049089987815911425-Zbsp) or [Mastadon](https://infosec.exchange/@stians/110142099127414506).
