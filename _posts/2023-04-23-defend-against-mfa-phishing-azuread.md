@@ -77,4 +77,4 @@ To allow enrollment of e.g. new mobile devices in Intune for existing users, set
 
 That's all for now, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse), [LinkedIn](https://www.linkedin.com) or [Mastadon](https://infosec.exchange/@stians/).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1650199681580822529), [LinkedIn](https://www.linkedin.com/posts/stianstrysse_defend-against-mfa-phishing-of-azure-ad-user-activity-7055963524124016640-TEZL) or [Mastadon](https://infosec.exchange/@stians/110249486902476311).
