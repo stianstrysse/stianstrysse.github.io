@@ -25,7 +25,7 @@ According to Microsoft, a whooping 99% of compromised user accounts were not pro
 
 ## Weak MFA methods
 
-Phone-call and SMS, the weakest form of MFA. This might differ from country to country, but mobile subscriptions can be vulnerable to SIM swapping by attackers which fraudulently takes control of a user's mobile subscription by persuading their mobile carrier to transfer the phone number to a SIM card in the attacker's possession. Another possible attack vector is simply put SMS interception - where an attacker catches the SMS contents which is not encrypted.
+Phone-call and SMS, [the weakest form of MFA](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/it-s-time-to-hang-up-on-phone-transports-for-authentication/ba-p/1751752). This might differ from country to country, but mobile subscriptions can be vulnerable to SIM swapping by attackers which fraudulently takes control of a user's mobile subscription by persuading their mobile carrier to transfer the phone number to a SIM card in the attacker's possession. Another possible attack vector is simply put SMS interception - where an attacker catches the SMS contents which is not encrypted.
 
 ## Strong MFA methods
 
@@ -77,4 +77,4 @@ To allow enrollment of e.g. new mobile devices in Intune for existing users, set
 
 That's all for now, thanks for reading!
 
-Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse/status/1643326509036306436), [LinkedIn](https://www.linkedin.com/posts/stianstrysse_follow-just-enough-access-principle-by-activity-7049089987815911425-Zbsp) or [Mastadon](https://infosec.exchange/@stians/110142099127414506).
+Be sure to provide any feedback on [Twitter](https://twitter.com/stianstrysse), [LinkedIn](https://www.linkedin.com) or [Mastadon](https://infosec.exchange/@stians/).
