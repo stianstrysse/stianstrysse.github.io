@@ -21,7 +21,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-google_analytics: UA-206770361-1
+# Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
+gtag: "G-LJWCY15Q0W"
 
 social-network-links:
   github: stianstrysse
