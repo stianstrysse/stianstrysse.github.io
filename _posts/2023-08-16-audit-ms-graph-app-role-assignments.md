@@ -7,6 +7,8 @@ categories: AZUREAD AZURE IDENTITY ENTRAID ENTRA PRIVILEGEDACCESS MICROSOFTGRAPH
 author: Stian A. Strysse
 ---
 
+I've earlier blogged about [Building a comprehensive report on admin role assignments in Powershell](https://learningbydoing.cloud/blog/building-a-comprehensive-report-on-azure-ad-admin-role-assignments/), this time we'll look at app role assignments instead.
+
 Application permissions, often called app role assignments in Entra ID (former Azure AD), are permission sets that an app, service principal or managed identity can be assigned in another resource app, and that app's identity can then access and utilize the resource app's API without a signed-in user present.
 
 Service principals by default have no access to enumerate other objects in Entra ID (former Azure AD). An example, if a service principal used in automated workflows requires read access to all user objects in Entra ID, it will need to be assigned the app role `User.Read.All` [application permission](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types) (app role) in Microsoft Graph, consented by an admin, to be able to query Graph for any or all users.
@@ -234,7 +236,7 @@ ApplicationAuthenticationResourceSignInActivity :
 
 ## Full script on GitHub
 
-I like to explain how the Powershell scripts I publish works, and this blog post does just that. I have also published [the full Powershell script on GitHub](https://github.com/stianstrysse/powershell-scripts/blob/main/AzureAD-AdminRoles-ReportScript.ps1) so you don't have to copy/paste from this page, feel free to check it out.
+I like to explain how the Powershell scripts I publish works, and this blog post does just that. I have also published [the full Powershell script on GitHub](https://github.com/stianstrysse/powershell-scripts/blob/main/EntraID-audit-msgraph-approleassignments.ps1) so you don't have to copy/paste from this page, feel free to check it out.
 
 Thanks for reading!
 
