@@ -240,4 +240,4 @@ I like to explain how the Powershell scripts I publish works, and this blog post
 
 Thanks for reading!
 
-Be sure to provide any feedback on [X (former Twitter)](https://twitter.com/stianstrysse/status/1571572424516448256) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_building-a-comprehensive-report-on-azure-activity-6977338056408219649-KTgg).
+Be sure to provide any feedback on [X (former Twitter)](https://x.com/stianstrysse/status/1691794041661211106) or [LinkedIn](https://www.linkedin.com/posts/stianstrysse_whats-lurking-in-your-microsoft-graph-app-activity-7097559044852187137-tave).
