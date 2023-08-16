@@ -21,7 +21,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-google_analytics: UA-206770361-1
+#google_analytics: UA-206770361-1
+# Analytics
+analytics:
+  provider               : "google-gtag"
+  google:
+    measurement_id          : "G-LJWCY15Q0W"
+    anonymize_ip         : true
 
 social-network-links:
   github: stianstrysse
