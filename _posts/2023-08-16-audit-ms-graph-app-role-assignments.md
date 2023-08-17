@@ -38,12 +38,13 @@ I wish there was a list of all Microsoft Graph app roles with tiering informatio
 # NOTE: Organizations should do their own investigations and include any app roles to regard as sensitive, and which tier to assign them.
 $appRoleTiers = @{
     'Application.ReadWrite.All'          = 'Tier 0' # SP can add credentials to other high-privileged apps, and then sign-in as the high-privileged app
-    'Application.ReadWrite.OwnedBy'      = 'Tier 0' # SP can take ownership over other high-privileged apps, and then add credentials
     'AppRoleAssignment.ReadWrite.All'    = 'Tier 0' # SP can add any app role assignments to any resource, including MS Graph
     'Directory.ReadWrite.All'            = 'Tier 0' # SP can read and write all objects in the directory, including adding credentials to other high-privileged apps
     'RoleManagement.ReadWrite.Directory' = 'Tier 0' # SP can grant any role to any principal, including Global Admin
 }
 ```
+
+_Update 2023-08-17 @ 11:00 (CEST): Removed 'Application.ReadWrite.OwnedBy' from the list as this permission isn't Tier 0 at all: "Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user. It cannot update any apps that it is not an owner of."_
 
 ## Required scopes in Graph Powershell SDK
 
