@@ -63,7 +63,7 @@ Now that we have created the custom extension attribute on an application and it
 - In [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), set method to `Patch` with resource Uri `https://graph.microsoft.com/v1.0/users/{user objectId or upn}}`, insert the objectId or UserPrincipalName of an existing user. Add `Request body` and set the extension attribute name to a value.
 
     ```
-    POST https://graph.microsoft.com/v1.0/users/e600712c-2132-455f-8d9f-ae0fc5ac9abe
+    PATCH https://graph.microsoft.com/v1.0/users/e600712c-2132-455f-8d9f-ae0fc5ac9abe
 
     {
         "extension_cde0e9a5d3f44a81b81097334dbb9f66_ObjectLifeCycleState": "Active"
