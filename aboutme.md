@@ -13,7 +13,7 @@ Specializing in Identity, Access, Security & Cloud technology - specifically in 
 
 ### Connect with me
 
-[Twitter](https://twitter.com/stianstrysse) - [LinkedIn](https://no.linkedin.com/in/stianstrysse) - [GitHub](https://github.com/stianstrysse)
+[BlueSky](https://bsky.app/profile/learningbydoing.cloud) - [LinkedIn](https://no.linkedin.com/in/stianstrysse) - [GitHub](https://github.com/stianstrysse) - [Twitter / X](https://twitter.com/stianstrysse)
 
 ### Certifications and badges
 
