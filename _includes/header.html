@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="shell nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="LearningByDoing.cloud home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>LearningByDoing<span class="brand-dot">.cloud</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Articles</a>
+      <a href="{{ '/aboutme' | relative_url }}"{% if page.url contains 'aboutme' %} aria-current="page"{% endif %}>About</a>
+      <a class="nav-github" href="https://github.com/{{ site.github_username }}" rel="me">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
