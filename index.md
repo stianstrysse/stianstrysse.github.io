@@ -6,7 +6,3 @@ subtitle: A blog about cloud stuff - by Stian Strysse Bjørge
 share-img: "/assets/img/share-img.png"
 show-avatar: false
 ---
-
-![Site Img](/assets/img/share-img.png)
-
-_A blog about cloud stuff - by [Stian A. Strysse](https://learningbydoing.cloud/aboutme)_
