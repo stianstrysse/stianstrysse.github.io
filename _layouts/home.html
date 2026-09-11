@@ -2,18 +2,23 @@
 layout: default
 ---
 <section class="hero shell">
-  <div class="eyebrow"><span></span> Identity · Access · Cloud</div>
-  <h1>Learning the cloud<br><em>by doing.</em></h1>
-  <p class="hero-copy">Field notes, honest opinions and practical guides about Microsoft Entra, identity governance and cloud security.</p>
-  <div class="author-chip">
-    <img src="{{ site.avatar | relative_url }}" alt="Stian Strysse Bjørge" width="48" height="48">
-    <span><strong>Stian Strysse Bjørge</strong><small>Senior Identity Architect</small></span>
+  <div class="hero-copy-wrap">
+    <div class="eyebrow"><span></span> Identity · Access · Cloud</div>
+    <h1>Ideas become<br><em>real by doing.</em></h1>
+    <p class="hero-copy">Field notes, honest opinions and practical guides about Microsoft Entra, identity governance and cloud security.</p>
+    <a class="hero-action" href="#latest-heading">Explore the notebook <span aria-hidden="true">↘</span></a>
+  </div>
+  <div class="profile-art">
+    <div class="profile-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="profile-frame"><img src="{{ site.avatar | relative_url }}" alt="Illustrated portrait of Stian Strysse Bjørge"></div>
+    <div class="profile-caption"><span class="signal"></span><div><strong>Stian Strysse Bjørge</strong><small>Senior Identity Architect</small></div></div>
+    <span class="profile-code" aria-hidden="true">{ learn(); build(); share(); }</span>
   </div>
 </section>
 
 <section class="articles shell" aria-labelledby="latest-heading">
   <div class="section-head">
-    <div><span class="section-kicker">The notebook</span><h2 id="latest-heading">Latest articles</h2></div>
+    <div><span class="section-kicker">Fresh from the field</span><h2 id="latest-heading">Latest articles</h2></div>
     <label class="search"><span class="sr-only">Search articles</span><span aria-hidden="true">⌕</span><input id="article-search" type="search" placeholder="Search articles" autocomplete="off"></label>
   </div>
   <div class="post-grid" id="post-grid">
