@@ -7,8 +7,6 @@ categories: ENTRA PIM AZURE RBAC API CUSTOMEXTENSIONS
 author: Stian Strysse Bjørge
 ---
 
-![PIM activation request passing through two custom API checkpoints](/assets/img/posts/2026-09-07/pim-extensions.png)
-
 I recently [wrote about the things I would fix in Microsoft Entra Privileged Identity Management](https://learningbydoing.cloud/blog/pim-shortcomings/) if Microsoft made me Product Manager for a day. While researching that post, one preview feature caught my attention: **custom extensions for role activation** - which is something I helped test in private preview earlier.
 
 The idea is simple. A user requests activation of a role and writes a justification. PIM sends the activation request to a REST API that you control. Your API evaluates the request and tells PIM to continue, automatically approve it, or deny it.

@@ -9,6 +9,12 @@
   {% if social_image %}
 <meta property="og:image" content="{{ social_image | absolute_url }}">
 <meta name="twitter:image" content="{{ social_image | absolute_url }}">
+    {% if page.layout == 'home' %}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Learning by doing cloud stuff, with the L/D logo and a portrait of Stian Strysse Bjørge">
+<meta name="twitter:image:alt" content="Learning by doing cloud stuff, with the L/D logo and a portrait of Stian Strysse Bjørge">
+    {% endif %}
   {% endif %}
 {% endunless %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
