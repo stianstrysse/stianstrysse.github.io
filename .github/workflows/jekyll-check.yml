@@ -15,7 +15,7 @@ jobs:
       - name: Check generated pages and assets
         run: |
           test -s _site/index.html
-          test -s _site/aboutme.html
+          test -s _site/aboutme/index.html || test -s _site/aboutme.html
           test -s _site/feed.xml
           test -s _site/sitemap.xml
           test -s _site/assets/css/style.css
