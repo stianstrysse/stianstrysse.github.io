@@ -15,4 +15,6 @@ html,body{max-width:100%;overflow-x:hidden;overflow-x:clip}
 .post-header{padding-bottom:40px}.post-story{max-width:1160px;background:var(--surface);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow);backdrop-filter:blur(20px)}.post-story .post-hero{margin:0}.post-story .post-hero img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.post-story .post-content{width:100%;max-width:none;margin:0;background:none;border:0;border-radius:0;padding:clamp(34px,5vw,68px);box-shadow:none;backdrop-filter:none}.post-body{max-width:700px;margin-inline:auto}
 @media(max-width:720px){.shell{width:min(calc(100% - 28px),1160px)}.hero{overflow-x:hidden;overflow-x:clip}}
 @media(max-width:720px){.post-header{padding-bottom:32px}.post-story{border-radius:24px}.post-story .post-content{padding:30px 20px 38px}}
+.post-byline a{text-decoration:none}.post-byline a:hover,.post-byline a:focus-visible{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){.post-header:after{right:0;width:min(70vw,300px);height:300px;pointer-events:none}.post{overflow-x:hidden;overflow-x:clip}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.post-card,.card-image img,.hero-action span,nav a:after{transition:none}}
