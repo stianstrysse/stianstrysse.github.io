@@ -19,7 +19,7 @@ layout: default
 <section class="articles shell" aria-labelledby="latest-heading">
   <div class="section-head">
     <div><span class="section-kicker">Fresh from the field</span><h2 id="latest-heading">Latest articles</h2></div>
-    <label class="search"><span class="sr-only">Search articles</span><span aria-hidden="true">⌕</span><input id="article-search" type="search" placeholder="Search articles" autocomplete="off"></label>
+    <label class="search"><span class="sr-only">Search article titles and topics</span><span aria-hidden="true">⌕</span><input id="article-search" type="search" placeholder="Search articles" autocomplete="off"></label>
   </div>
   <div class="post-grid" id="post-grid">
     {% for post in site.posts %}
@@ -41,14 +41,17 @@ layout: default
     {% endfor %}
   </div>
   <p class="no-results" id="no-results" hidden>No articles found. Try another search.</p>
+  <p class="sr-only" id="search-status" role="status" aria-live="polite"></p>
 </section>
 <script>
   const search = document.querySelector('#article-search');
   const cards = [...document.querySelectorAll('.post-card')];
   const empty = document.querySelector('#no-results');
+  const status = document.querySelector('#search-status');
   search?.addEventListener('input', () => {
     const query = search.value.toLowerCase().trim(); let shown = 0;
     cards.forEach(card => { const match = card.dataset.search.includes(query); card.hidden = !match; if (match) shown++; });
     empty.hidden = shown !== 0;
+    status.textContent = query ? `${shown} ${shown === 1 ? 'article' : 'articles'} found` : '';
   });
 </script>

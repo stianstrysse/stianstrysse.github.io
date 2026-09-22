@@ -1,12 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
-  <title id="title">LearningByDoing.cloud logo</title>
-  <desc id="desc">An abstract connected L and D monogram</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">LearningByDoing.cloud</title>
+  <desc id="desc">An L and D drawn as two connected paths</desc>
   <defs>
-    <linearGradient id="g" x1="8" y1="6" x2="72" y2="74" gradientUnits="userSpaceOnUse"><stop stop-color="#7C4DFF"/><stop offset=".48" stop-color="#315CFF"/><stop offset="1" stop-color="#00C7B1"/></linearGradient>
-    <linearGradient id="p" x1="20" y1="18" x2="62" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#BFFCF2"/></linearGradient>
-    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#172B85" flood-opacity=".35"/></filter>
+    <linearGradient id="tile" x1="5" y1="5" x2="59" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2b2e83"/>
+      <stop offset=".55" stop-color="#4333a9"/>
+      <stop offset="1" stop-color="#145e84"/>
+    </linearGradient>
+    <linearGradient id="route" x1="35" y1="16" x2="57" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74f3e1"/>
+      <stop offset="1" stop-color="#49c8ec"/>
+    </linearGradient>
   </defs>
-  <path d="M19 5h42c7.7 0 14 6.3 14 14v42c0 7.7-6.3 14-14 14H19C11.3 75 5 68.7 5 61V19C5 11.3 11.3 5 19 5Z" fill="url(#g)" filter="url(#s)"/>
-  <path d="M25 20v39h18.5c11.9 0 20.5-7.8 20.5-19.5S55.4 20 43.5 20H37v10h6.3c5.9 0 9.7 3.8 9.7 9.5S49.2 49 43.3 49H36V20H25Z" fill="url(#p)"/>
-  <circle cx="63" cy="18" r="5" fill="#FF5CA8" stroke="#fff" stroke-width="2"/>
+  <rect width="64" height="64" rx="17" fill="url(#tile)"/>
+  <path d="M19 16v32h16" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 16h5c11 0 17 6.5 17 16s-6 16-17 16h-5" fill="none" stroke="url(#route)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
