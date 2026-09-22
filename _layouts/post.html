@@ -7,7 +7,7 @@ layout: default
     <div class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time><span>·</span><span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span></div>
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
-    <div class="post-byline"><img src="{{ site.avatar | relative_url }}" alt="" width="40" height="40"><span>Written by <strong>{{ page.author | default: site.author }}</strong></span></div>
+    <div class="post-byline"><img src="{{ site.avatar | relative_url }}" alt="" width="40" height="40"><span>Written by <strong><a href="{{ '/aboutme' | relative_url }}">{{ page.author | default: site.author }}</a></strong></span></div>
   </header>
   {% assign post_image = page.image | default: page.thumbnail-img | default: page.share-img %}
   <div class="post-story shell">
