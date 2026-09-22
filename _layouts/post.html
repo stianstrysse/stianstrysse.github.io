@@ -9,6 +9,10 @@ layout: default
     {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
     <div class="post-byline"><img src="{{ site.avatar | relative_url }}" alt="" width="40" height="40"><span>Written by <strong>{{ page.author | default: site.author }}</strong></span></div>
   </header>
+  {% assign post_image = page.image | default: page.thumbnail-img | default: page.share-img %}
+  {% if post_image %}
+    <figure class="post-hero shell"><img src="{{ post_image | relative_url }}" alt="" fetchpriority="high"></figure>
+  {% endif %}
   <div class="prose post-content shell">{{ content }}</div>
   <footer class="post-end shell">
     <div class="share-links"><span>Share</span><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}">LinkedIn ↗</a><a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}">X ↗</a></div>
