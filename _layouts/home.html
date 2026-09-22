@@ -4,7 +4,7 @@ layout: default
 <section class="hero shell">
   <div class="hero-copy-wrap">
     <div class="eyebrow"><span></span> Identity · Access · Cloud</div>
-    <h1>Ideas become<br><em>real by doing.</em></h1>
+    <h1>Learning by doing<br><em>cloud stuff</em></h1>
     <p class="hero-copy">Field notes, honest opinions and practical guides about Microsoft Entra, identity governance and cloud security.</p>
     <a class="hero-action" href="#latest-heading">Explore the notebook <span aria-hidden="true">↘</span></a>
   </div>
@@ -32,10 +32,7 @@ layout: default
           <div class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time><span>·</span><span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span></div>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           {% if post.subtitle %}<p>{{ post.subtitle | strip_html | truncate: 150 }}</p>{% endif %}
-          <div class="card-foot">
-            <div class="tags">{% for category in post.categories limit:2 %}<span>{{ category }}</span>{% endfor %}</div>
-            <a class="read-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">Read <span aria-hidden="true">→</span></a>
-          </div>
+          <div class="card-foot"><a class="read-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">Read <span aria-hidden="true">→</span></a></div>
         </div>
       </article>
     {% endfor %}
